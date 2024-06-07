@@ -42,7 +42,16 @@
           >
             +
           </button>
-          <button>-</button>
+          <button
+            onclick="
+          cantidad = cantidad - 1;
+          totalPagar = cantidad * precio;
+          document.querySelector('#cantidad').innerHTML = cantidad
+          document.querySelector('#valor-total').innerHTML = totalPagar
+          "
+          >
+            -
+          </button>
         </p>
       </div>
     </section>

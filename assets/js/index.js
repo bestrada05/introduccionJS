@@ -1,4 +1,6 @@
 /* Precio Base*/
-let precio = 1000;
+let precio = 400000;
 
 document.querySelector("#precio-base").innerHTML = precio;
+
+let cantidad = 0;
