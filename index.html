@@ -31,11 +31,11 @@
         <p>Precio base: $<span id="precio-base"></span></p>
         <p>
           Cantidad:
-          <span id="cantidad">0</span>
+          <span id="cantidad"></span>
           <button
             onclick="
-          cantidad = cantidad + 1;
-          totalPagar = cantidad * precio;
+          cantidad += 1;
+          totalPagar = cantidad * precioBase;
           document.querySelector('#cantidad').innerHTML = cantidad
           document.querySelector('#valor-total').innerHTML = totalPagar
           "
@@ -44,8 +44,8 @@
           </button>
           <button
             onclick="
-          cantidad = cantidad - 1;
-          totalPagar = cantidad * precio;
+          cantidad -= 1;
+          totalPagar = cantidad * precioBase;
           document.querySelector('#cantidad').innerHTML = cantidad
           document.querySelector('#valor-total').innerHTML = totalPagar
           "
@@ -60,6 +60,6 @@
       <p>Total a pagar: $<span id="valor-total"></span></p>
     </div>
 
-    <script src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/index.js"></script>
   </body>
 </html>
